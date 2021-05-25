@@ -101,6 +101,22 @@ func NewContractAddressesForChainID(chainID int) (ContractAddresses, error) {
 			ExchangeProxy:            common.HexToAddress("0xdef1c0ded9bec7f1a1670819833240f027b25eff"),
 			DevUtilsV4:               common.HexToAddress("0xc67ae71928568a180b3aad1339dedcf3076876fe"),
 		}, nil
+	case 56:
+		return ContractAddresses{
+			ERC20Proxy:               common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			ERC721Proxy:              common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			ERC1155Proxy:             common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			Exchange:                 common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			ExchangeProxyFlashWallet: common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			DevUtils:                 common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			WETH9:                    common.HexToAddress("0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"),
+			ZRXToken:                 common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			ChaiBridge:               common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			ChaiToken:                common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			MaximumGasPrice:          common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			ExchangeProxy:            common.HexToAddress("0xdef1c0ded9bec7f1a1670819833240f027b25eff"),
+			DevUtilsV4:               common.HexToAddress("0x0000000000000000000000000000000000000000"),
+		}, nil
 	case 1337:
 		return ganacheAddresses(), nil
 	default:
